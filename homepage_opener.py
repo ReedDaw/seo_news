@@ -1,0 +1,9 @@
+# coding: utf-8
+import webbrowser
+
+url_list = ['https://ar.indeed.com','https://au.indeed.com/','https://at.indeed.com/','https://bh.indeed.com/','https://be.indeed.com/','https://www.indeed.com.br/','https://ca.indeed.com/','http://www.indeed.cl/','https://cn.indeed.com/','https://co.indeed.com/','https://cr.indeed.com/','https://cz.indeed.com/','https://dk.indeed.com/','https://ec.indeed.com/','https://eg.indeed.com/','https://www.indeed.fi/','https://www.indeed.fr/','https://de.indeed.com/','https://gr.indeed.com/','https://www.indeed.hk/','https://hu.indeed.com/','https://www.indeed.com/','https://www.indeed.co.in/','https://id.indeed.com/','https://ie.indeed.com/','https://il.indeed.com/','https://it.indeed.com/','https://jp.indeed.com/','https://kw.indeed.com/','https://www.indeed.lu/','https://www.indeed.com.my/','https://www.indeed.com.mx/','https://ma.indeed.com/','https://www.indeed.nl/','https://nz.indeed.com/','https://ng.indeed.com/','https://no.indeed.com/','https://om.indeed.com/','https://www.indeed.com.pk/','https://pa.indeed.com/','https://www.indeed.com.pe/','https://www.indeed.com.ph/','https://pl.indeed.com/','https://www.indeed.pt/','https://qa.indeed.com/','https://ro.indeed.com/','https://ru.indeed.com/','https://sa.indeed.com/','https://www.indeed.com.sg/','https://www.indeed.co.za/','https://kr.indeed.com/','https://www.indeed.es/','https://se.indeed.com/','https://www.indeed.ch/','https://tw.indeed.com/','https://th.indeed.com/','https://tr.indeed.com/','https://ua.indeed.com/','https://www.indeed.ae/','https://www.indeed.co.uk/','https://uy.indeed.com/','https://ve.indeed.com/','https://vn.indeed.com/']
+
+chrome_path = 'open -a /Applications/Google\\ Chrome.app %s'
+
+for url in url_list:
+	webbrowser.get(chrome_path).open_new(url)
